@@ -1,0 +1,719 @@
+/* обнуление стилей */
+* {
+    margin: 0;
+    padding: 0;
+    }
+/* центрирование страницы */
+.container {
+     max-width: 1140px;
+     margin: 0 auto;
+}
+/* расположение элементов меню */
+.menu ul {
+     display: flex;
+     justify-content: space-between;
+     list-style-type: none;
+}
+/* правила для всего сайта */
+html {
+    font-family: sans-serif;
+}
+/* правила для всех элементов <p> */
+.first {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+}
+
+.first_project {
+    width: 75%;
+    margin: 32px auto 64px;
+    color: #222222;
+    opacity: 1;
+    text-align: center;
+}
+
+/* правила для заголовка <h1> */
+.second {
+    width: 504px;
+    font-size: 64px;
+    color: #1F3F68;
+    font-weight: 300;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+}
+
+.top_button {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    padding: 15px 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 71px;
+}
+
+/* правила для текста под заголовком <h1> */
+.second+.first {
+    width: 425px;
+}
+/* карточки товара */
+.card {
+    width: 359px;
+    padding: 44px 32px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+/* расположение карточек товара */
+.card_box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.card__img {
+    align-self: center;
+    margin-bottom: 51px;
+}
+
+/* блок h4+p в верхней части футера */
+.info {
+    width: 495px;
+}
+/* заголовок в подвале сайта */
+.info+.fourth {
+    width: 340px;
+}
+/* расположение контактов в футере */
+.contacts>ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.contacts ul li {
+    flex-grow: 1;
+    flex-basis: 33.3333%;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding-right: 32px;
+    margin-right: 32px;
+    display: flex;
+}
+
+.contacts ul li:first-child::before {
+    content: '1. ';
+    display: block;
+    margin-right: 16px;
+  }
+  
+  .contacts ul li:nth-child(2)::before {
+    content: '2. ';
+    display: block;
+    margin-right: 16px;
+  }
+  
+  .contacts ul li:nth-child(3)::before {
+    content: '3. ';
+    display: block;
+    margin-right: 16px;
+  }
+
+
+.contacts ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* расположение блоков на странице контакты */
+.main_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* правила для элементов <h2> на странице "контакты" */
+.third {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+/* правила для всех элементов <h3> */
+.fourth {
+font-size: 36px;
+text-align: center;
+font-weight: 300;
+line-height: 46px;
+letter-spacing: 0.05em;
+}
+
+.what-we-do {
+    padding-top: 64px;
+}
+
+/* правила для элементов <h4> */
+.heading-mini {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+    letter-spacing: 0.05em;
+    margin-bottom: 14px;
+}
+
+.card__link {
+    font-size: 14px;
+    line-height: 30px
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    text-decoration: none;
+    margin-top: 28px;
+}
+
+/* правила для всех полей ввода */
+.input {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+/* правила для кнопки */
+.button {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.project__img {
+    width: 100%;
+}
+
+.project__item {
+    position: relative;
+    flex-grow: 1;
+}
+
+.project__text {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 64px;
+    right: 64px;
+}
+
+.project__text_small {
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+}
+
+.project__parent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.project__item_margin {
+    margin-right: 32px;
+}
+
+.header {
+    min-height: 768px;
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.menu {
+    padding-top: 42px;
+}
+
+.heading {
+    padding-top: 115px;
+    padding-bottom: 240px;
+    flex-grow: 1;
+    background-image: url(img/illustration.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.top_box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+
+.footer {
+    background: #316099;
+    padding-top: 91px;
+    padding-bottom: 64px;
+    margin-top: 112px;
+}
+
+.cowork {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fourth_footer {
+    width: 340px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.first_footer {
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+
+.footer_button_link {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #5A98D0;
+    padding: 15px 80px;
+}
+
+
+hr {
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+    margin-top: 96px;
+    margin-bottom: 64px;
+}
+
+.copyright .first {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+.copyright {
+    padding-top: 64px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .heading {
+        background-size: 44%;
+        background-position: right 280px;
+    }
+    .card_box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        margin-bottom: 32px;
+    }
+    .footer {
+        margin-top: 109px;
+        padding-top: 47px;
+    }
+    .fourth_footer {
+        width: 336px;
+    }
+    .footer_button {
+        width: 133px;
+        white-space: nowrap;
+    }
+    .footer_button_link {
+        padding: 8px 30px;
+    }
+    .contacts>ul {
+        flex-direction: column;
+    }
+    .contacts ul li {
+        padding-bottom: 25px;
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .contacts ul li:last-child {
+        padding-bottom: 0;
+    }
+    .contacts ul li:first-child::before {
+        margin-right: 36px;
+    }
+    .contacts ul li:nth-child(2)::before {
+        margin-right: 36px;
+    }
+    .contacts ul li:nth-child(3)::before {
+        margin-right: 36px;
+    }
+    .container_footer {
+        padding-left: 125px;
+        padding-right: 125px;
+    }
+    .info {
+        width: 336px;
+    }
+
+
+
+   /* адаптив страницы КОНТАКТЫ дз 8 */
+
+    .menu.contacts_menu {
+        padding-top: 16px;
+    }
+    p.first.contacts_first {
+    width: 520px;
+    }
+    .main_content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .send_message.margin {
+        margin-left: 0;
+        margin-bottom: 64px;
+    }
+    .company_info {
+        width: 300px;
+        padding-bottom: 64px;
+    }
+    .map.container {
+        width: 100%;
+        padding: 0;
+    }
+    .footer.contacts_footer {
+        margin-top: 64px;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 667px) {
+    .header {
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+    .menu {
+        padding-top: 24px;
+    }
+    .heading {
+        padding-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+    }
+    .second {
+        width: 100%;
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    .second+.first {
+        width: 100%;
+        text-align: center;
+    }
+    .top_button {
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0 8px;
+    }
+    .what-we-do>.fourth {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .what-we-do {
+        padding-top: 48px;
+    }
+    .card_box {
+        padding-top: 32px;
+    }
+    .card {
+        width: 100%;
+    }
+    .project>.fourth {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .first_project {
+        width: 100%;
+    }
+    .project__text {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+    .project__text_small {
+        left: 16px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .project__parent {
+        flex-direction: column;
+        margin-top: 16px;
+    }
+    .project__item_margin {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .footer {
+        margin-top: 64px;
+        padding-top: 18px;
+        padding-bottom: 32px;
+    }
+    .cowork {
+        flex-direction: column;
+    }
+    .info {
+        width: 100%;
+    }
+    .fourth_footer {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        width: 75%;
+        margin: 0 auto 32px;
+    }
+    .first_footer {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    hr {
+        margin-top: 41px;
+        margin-bottom: 32px;
+    }
+    .container_footer {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .copyright {
+        padding-top: 37px;
+    }
+    .contacts ul li {
+        padding-bottom: 17px;
+    }
+    .copyright .first {
+        text-align: center;
+    }
+    .contacts ul li:first-child::before {
+        margin-right: 23px;
+    }
+    .contacts ul li:nth-child(2)::before {
+        margin-right: 23px;
+    }
+    .contacts ul li:nth-child(3)::before {
+        margin-right: 23px;
+    }
+
+
+
+/* адаптив страницы КОНТАКТЫ дз 8 */
+.footer.contacts_footer {
+    margin-top: 32px;
+}
+.send_message.margin {
+    margin-bottom: 32px;
+}
+.map.container {
+    width: 100vw;
+}
+}
+
+
+
+
+
+
+
+/* задание со звёздочкой 7 урока, вёрстка страницы Контакты по макету, не доделано */
+
+.main_content {
+    max-width: 940px;
+}
+
+.map>.container {
+    padding-left: 212px;
+}
+.map.container {
+    box-sizing: border-box;
+    width: 940px;
+}
+
+.contact_us {
+    background: linear-gradient(253.6deg, #98D0FC 2.46%, #3481D7 93.24%);
+    background-image: url(img/contacts-top.png);
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_us .third {
+font-weight: 500;
+font-size: 44px;
+line-height: 74px;
+text-align: center;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+padding-bottom: 16px;
+}
+.contact_us .first {
+    width: 780px;
+    font-size: 20px;
+line-height: 30px;
+text-align: center;
+letter-spacing: 0.04em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.send_message {
+    flex: 1;
+    background: #FFFFFF;
+box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+border-radius: 10px;
+padding: 56px;
+margin-bottom: 96px;
+margin-left: 101px;
+display: flex;
+flex-direction: column;
+}
+.send_message .fifth {
+    font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.04em;
+color: #1F3F68;
+text-transform: uppercase;
+padding-bottom: 48px;
+}
+.company_info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 800px;
+    padding-top: 56px;
+}
+.form {
+    height: 100%;
+}
+.company_info .fifth {
+    font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.04em;
+color: #1F3F68;
+text-transform: uppercase;
+padding-bottom: 24px;
+padding-top: 40px;
+}
+.phone ul {
+    list-style-image: url(img/contacts-phone.svg);
+    list-style-position: inside;
+}
+.phone ul li a {
+    text-decoration: none;
+    font-weight: 300;
+font-size: 16px;
+line-height: 26px;
+letter-spacing: 0.04em;
+color: #1F3F68;
+padding-left: 19px;
+}
+.online_service ul li a {
+    text-decoration: none;
+    font-size: 16px;
+line-height: 26px;
+letter-spacing: 0.05em;
+color: #1F3F68;
+padding-left: 19px;
+}
+
+.online_service ul {
+    list-style-image: url(img/contacts-world.svg);
+    list-style-position: inside;
+}
+
+.online_service ul li:last-child {
+    list-style-image: url(img/contacts-mail.svg);
+    list-style-position: inside;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.input_name {
+    font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.04em;
+color: #1F3F68;
+opacity: 0.8;
+margin-bottom: 8px;
+}
+
+form input {
+    padding: 21px 36px;
+    opacity: 0.4;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 72px;
+    margin-bottom: 32px;
+}
+form textarea {
+   padding: 21px 36px;
+    opacity: 0.4;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 144px;
+    margin-bottom: 72px;
+}
+.button {
+    padding: 23px 183px;
+}

@@ -3,47 +3,406 @@
     margin: 0;
     padding: 0;
     }
+
 /* центрирование страницы */
 .container {
-     max-width: 1140px;
-     margin: 0 auto;
-}
-/* расположение элементов меню */
-.menu ul {
-     display: flex;
-     justify-content: space-between;
-     list-style-type: none;
-}
+    max-width: 1140px; /* max для адаптивности */
+    margin: 0 auto;
+    }
+
 /* правила для всего сайта */
 html {
-    font-family: sans-serif;
+font-family: sans-serif;
 }
-/* правила для всех элементов <p> */
-.first {
+
+/* горизонтальное меню */
+.header {
+    display: flex;
+     justify-content: space-between;
+     list-style-type: none;
+     padding-top: 42px;
+}
+
+/* правила для всех параграфов */
+.text {
     font-size: 16px;
     line-height: 26px;
     color: #1F3F68;
     letter-spacing: 0.05em;
     opacity: 0.6;
+    text-decoration: none;
 }
 
-.first_project {
+.text_form {
+    font-weight: 300;
+    letter-spacing: 0.04em;
+}
+
+.main ul {
+    list-style-type: none;
+}
+
+.main ul li:first-child {
+    margin-bottom: 16px;
+}
+
+.phone_numbers {
+    display: flex;
+}
+
+.phone_numbers::before {
+    content: url(img/contacts-phone.svg);
+    display: block;
+    margin-right: 19px;
+}
+
+.website {
+    display: flex;
+}
+
+.website::before {
+    content: url(img/contacts-world.svg);
+    display: block;
+    margin-right: 19px;
+}
+
+.email {
+    display: flex;
+}
+
+.email::before {
+    content: url(img/contacts-mail.svg);
+    display: block;
+    margin-right: 19px;
+}
+
+.text_project {
     width: 75%;
-    margin: 32px auto 64px;
+    margin: 32px auto 64px; /* центрируем блок */
     color: #222222;
     opacity: 1;
     text-align: center;
 }
 
-/* правила для заголовка <h1> */
-.second {
-    width: 504px;
+/* правила для h1 */
+.top_heading {
     font-size: 64px;
     color: #1F3F68;
+    width: 510px;
     font-weight: 300;
     line-height: 74px;
     letter-spacing: 0.04em;
     margin-bottom: 32px;
+}
+
+/* правила для текста под заголовком <h1> */
+.top_text {
+    width: 425px;
+}
+
+/* правила для h2 */
+.h_2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+/* правила для h3 */
+.heading {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+}
+
+/* правила для h4 */
+.heading_mini {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+    letter-spacing: 0.05em;
+    margin-bottom: 14px;
+}
+
+.heading_mini_form {
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.send_message {
+    margin-bottom: 48px;
+}
+
+.margin {
+    margin-bottom: 24px;
+    margin-top: 40px;
+}
+
+.form_img {
+    margin-bottom: 16px;
+}
+
+/* поля ввода в форме */
+.input_text {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+    height: 72px;
+    width: 100%;
+    padding: 21px 36px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+.input_textarea {
+    height: 144px;
+}
+
+/* кнопка в форме */
+.button_submit {
+background: #5A98D0;
+box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+border-radius: 10px;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+color: #FFFFFF;
+text-transform: uppercase;
+margin-top: 40px;
+padding: 23px 0;
+text-transform: uppercase;
+width: 100%;
+}
+
+.input_heading {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.8;
+}
+
+/* карточки товара */
+.card {
+    width: 359px;
+    padding: 44px 32px;
+    box-sizing: border-box; /* чтобы карточка не стала больше */
+    background: #FFFFFF; /* shadow1 */
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_img {
+    align-self: center;
+    margin-bottom: 51px;
+}
+
+/* расположение карточек товара */
+.card_box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.card_link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    padding-top: 30px;
+}
+
+.footer {
+    background: #316099;
+    margin-top: 112px;
+    padding-top: 91px;
+    padding-bottom: 64px;
+}
+
+.footer_top {
+    padding-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_heading {
+    color: #FFFFFF;
+    width: 340px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.text_footer {
+    color: #FFFFFF;
+}
+
+.footer_button {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #5A98D0;
+    padding: 15px 80px;
+}
+
+.footer_text {
+    width: 495px;
+}
+
+hr {
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+}
+
+/* расположение контактов в футере */
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.footer_list {
+    flex-grow: 1; /* занимают всё свободное пространство */
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    list-style-type: none;
+    flex-basis: 33.3333%;
+    display: flex;
+    margin-right: 32px;
+}
+
+.footer_list a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer_list:first-child::before {
+    content: '1. ';
+    display: block;
+    margin-right: 19px;
+}
+
+.footer_list:nth-child(2)::before {
+    content: '2. ';
+    display: block;
+    margin-right: 19px;
+}
+
+.footer_list:nth-child(3)::before {
+    content: '3. ';
+    display: block;
+    margin-right: 19px;
+}
+
+.footer_copy {
+    margin-top: 64px;
+}
+
+.footer_copy_text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+/* расположение блоков на странице контакты */
+.main {
+    display: flex;
+    margin-top: 57px;
+    margin-bottom: 96px;
+}
+
+.main_container {
+    width: 940px;
+}
+
+.contacts_info {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 56px;
+    margin-right: 100px;
+}
+
+.form {
+    background: #FFFFFF;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    padding: 56px;
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.project_img {
+    width: 100%;
+}
+
+.project_text {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 64px;
+    right: 64px;
+}
+
+.project_text_mini {
+    right: auto;
+    font-size: 28px;
+    text-align: left;
+    top: 32px;
+    left: 32px;
+}
+
+.project_item {
+    position: relative;
+    flex-grow: 1;
+}
+
+.project_parent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.project_item_margin {
+    margin-right: 32px;
+}
+
+.top {
+    min-height: 768px; /* min для адаптивности */
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.top_info {
+    padding-top: 115px;
+    flex-grow: 1;
+    background-image: url(img/illustration.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 44%;
 }
 
 .top_button {
@@ -57,663 +416,330 @@ html {
     border-radius: 10px;
     padding: 15px 50px;
     text-decoration: none;
-    display: inline-block;
+    display: inline-block; /* чтобы регулировать ширину/высоту */
     margin-top: 71px;
 }
 
-/* правила для текста под заголовком <h1> */
-.second+.first {
-    width: 425px;
-}
-/* карточки товара */
-.card {
-    width: 359px;
-    padding: 44px 32px;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-}
-/* расположение карточек товара */
-.card_box {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 64px;
-    padding-bottom: 64px;
-}
-
-.card__img {
-    align-self: center;
-    margin-bottom: 51px;
-}
-
-/* блок h4+p в верхней части футера */
-.info {
-    width: 495px;
-}
-/* заголовок в подвале сайта */
-.info+.fourth {
-    width: 340px;
-}
-/* расположение контактов в футере */
-.contacts>ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-}
-
-.contacts ul li {
-    flex-grow: 1;
-    flex-basis: 33.3333%;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-    padding-right: 32px;
-    margin-right: 32px;
-    display: flex;
-}
-
-.contacts ul li:first-child::before {
-    content: '1. ';
-    display: block;
-    margin-right: 16px;
-  }
-  
-  .contacts ul li:nth-child(2)::before {
-    content: '2. ';
-    display: block;
-    margin-right: 16px;
-  }
-  
-  .contacts ul li:nth-child(3)::before {
-    content: '3. ';
-    display: block;
-    margin-right: 16px;
-  }
-
-
-.contacts ul li a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-/* расположение блоков на странице контакты */
-.main_content {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* правила для элементов <h2> на странице "контакты" */
-.third {
-    font-weight: 500;
-    font-size: 44px;
-    text-align: center;
-}
-/* правила для всех элементов <h3> */
-.fourth {
-font-size: 36px;
-text-align: center;
-font-weight: 300;
-line-height: 46px;
-letter-spacing: 0.05em;
+.top_box {
+display: flex;
+flex-direction: column;
+min-height: 768px;
 }
 
 .what-we-do {
     padding-top: 64px;
 }
 
-/* правила для элементов <h4> */
-.heading-mini {
-    font-size: 20px;
-    line-height: 30px;
-    color: #1F3F68;
-    letter-spacing: 0.05em;
-    margin-bottom: 14px;
-}
-
-.card__link {
-    font-size: 14px;
-    line-height: 30px
-    letter-spacing: 0.05em;
-    color: #5A98D0;
-    text-decoration: none;
-    margin-top: 28px;
-}
-
-/* правила для всех полей ввода */
-.input {
-    border: 1px solid #356EAD;
-    box-sizing: border-box;
-    border-radius: 10px;
-    opacity: 0.4;
-}
-/* правила для кнопки */
-.button {
-    background: #5A98D0;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
-
-.project__img {
-    width: 100%;
-}
-
-.project__item {
-    position: relative;
-    flex-grow: 1;
-}
-
-.project__text {
-    font-size: 32px;
-    line-height: 46px;
-    text-align: right;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-    position: absolute;
-    top: 64px;
-    right: 64px;
-}
-
-.project__text_small {
-    font-size: 28px;
-    line-height: 46px;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-    position: absolute;
-    top: 32px;
-    left: 32px;
-}
-
-.project__parent {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 32px;
-}
-
-.project__item_margin {
-    margin-right: 32px;
-}
-
-.header {
-    min-height: 768px;
-    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
-}
-
-.menu {
-    padding-top: 42px;
-}
-
-.heading {
-    padding-top: 115px;
-    padding-bottom: 240px;
-    flex-grow: 1;
-    background-image: url(img/illustration.png);
+.contacts_header {
+    background: linear-gradient(
+253.6deg, #98D0FC 2.46%, #3481D7 93.24%);
+    background-image: url(img/contacts-top.png);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position-x: center;
+    width: 100vw;
+    padding: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.top_box {
+.contacts_top_flex {
     display: flex;
     flex-direction: column;
-    height: 100%;
-}
-
-
-
-
-.footer {
-    background: #316099;
-    padding-top: 91px;
-    padding-bottom: 64px;
-    margin-top: 112px;
-}
-
-.cowork {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.fourth_footer {
-    width: 340px;
-    color: #FFFFFF;
-    text-align: left;
-}
-
-.first_footer {
-    color: #FFFFFF;
-    margin-top: 32px;
-}
-
-.footer_button_link {
-    font-size: 16px;
-    line-height: 26px;
+.contacts_heading {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 74px;
     text-align: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    text-decoration: none;
-    background: #5A98D0;
-    padding: 15px 80px;
+    padding-bottom: 16px;
 }
 
-
-hr {
-    opacity: 0.4;
-    border: 1px solid #FFFFFF;
-    margin-top: 96px;
-    margin-bottom: 64px;
+.contacts_top_text {
+    width: 70%;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
 }
 
-.copyright .first {
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-    opacity: 0.4;
+@media (max-width: 1024px) {  /* 1024px - ipad гориз. */
+
+.container {
+    padding-left: 32px;
+    padding-right: 32px;
 }
-
-.copyright {
-    padding-top: 64px;
+.top_info {
+    background-position: right 280px;
 }
-
-
-
-
-@media (max-width: 1024px) {
-    .container {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-    .heading {
-        background-size: 44%;
-        background-position: right 280px;
-    }
-    .card_box {
-        flex-direction: column;
-        align-items: center;
-    }
-    .card {
-        margin-bottom: 32px;
-    }
-    .footer {
-        margin-top: 109px;
-        padding-top: 47px;
-    }
-    .fourth_footer {
-        width: 336px;
-    }
-    .footer_button {
-        width: 133px;
-        white-space: nowrap;
-    }
-    .footer_button_link {
-        padding: 8px 30px;
-    }
-    .contacts>ul {
-        flex-direction: column;
-    }
-    .contacts ul li {
-        padding-bottom: 25px;
-        padding-right: 0;
-        margin-right: 0;
-    }
-    .contacts ul li:last-child {
-        padding-bottom: 0;
-    }
-    .contacts ul li:first-child::before {
-        margin-right: 36px;
-    }
-    .contacts ul li:nth-child(2)::before {
-        margin-right: 36px;
-    }
-    .contacts ul li:nth-child(3)::before {
-        margin-right: 36px;
-    }
-    .container_footer {
-        padding-left: 125px;
-        padding-right: 125px;
-    }
-    .info {
-        width: 336px;
-    }
-
-
-
-   /* адаптив страницы КОНТАКТЫ дз 8 */
-
-    .menu.contacts_menu {
-        padding-top: 16px;
-    }
-    p.first.contacts_first {
-    width: 520px;
-    }
-    .main_content {
-        flex-direction: column;
-        align-items: center;
-    }
-    .send_message.margin {
-        margin-left: 0;
-        margin-bottom: 64px;
-    }
-    .company_info {
-        width: 300px;
-        padding-bottom: 64px;
-    }
-    .map.container {
-        width: 100%;
-        padding: 0;
-    }
-    .footer.contacts_footer {
-        margin-top: 64px;
-    }
-
-}
-
-
-
-
-
-
-
-
-@media (max-width: 667px) {
-    .header {
-        min-height: 376px;
-        padding-bottom: 41px;
-        box-sizing: border-box;
-    }
-    .menu {
-        padding-top: 24px;
-    }
-    .heading {
-        padding-top: 36px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-image: none;
-    }
-    .second {
-        width: 100%;
-        font-size: 32px;
-        line-height: 37px;
-        margin-bottom: 12px;
-        text-align: center;
-    }
-    .second+.first {
-        width: 100%;
-        text-align: center;
-    }
-    .top_button {
-        font-size: 12px;
-        line-height: 26px;
-        padding: 0 8px;
-    }
-    .what-we-do>.fourth {
-        font-size: 24px;
-        line-height: 28px;
-    }
-    .what-we-do {
-        padding-top: 48px;
-    }
-    .card_box {
-        padding-top: 32px;
-    }
-    .card {
-        width: 100%;
-    }
-    .project>.fourth {
-        font-size: 24px;
-        line-height: 28px;
-    }
-    .first_project {
-        width: 100%;
-    }
-    .project__text {
-        font-size: 16px;
-        line-height: 19px;
-        top: 16px;
-        right: 16px;
-    }
-    .project__text_small {
-        left: 16px;
-        font-size: 16px;
-        line-height: 19px;
-    }
-    .project__parent {
-        flex-direction: column;
-        margin-top: 16px;
-    }
-    .project__item_margin {
-        margin-right: 0;
-        margin-bottom: 16px;
-    }
-    .footer {
-        margin-top: 64px;
-        padding-top: 18px;
-        padding-bottom: 32px;
-    }
-    .cowork {
-        flex-direction: column;
-    }
-    .info {
-        width: 100%;
-    }
-    .fourth_footer {
-        font-size: 24px;
-        line-height: 28px;
-        text-align: center;
-        width: 75%;
-        margin: 0 auto 32px;
-    }
-    .first_footer {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    hr {
-        margin-top: 41px;
-        margin-bottom: 32px;
-    }
-    .container_footer {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    .copyright {
-        padding-top: 37px;
-    }
-    .contacts ul li {
-        padding-bottom: 17px;
-    }
-    .copyright .first {
-        text-align: center;
-    }
-    .contacts ul li:first-child::before {
-        margin-right: 23px;
-    }
-    .contacts ul li:nth-child(2)::before {
-        margin-right: 23px;
-    }
-    .contacts ul li:nth-child(3)::before {
-        margin-right: 23px;
-    }
-
-
-
-/* адаптив страницы КОНТАКТЫ дз 8 */
-.footer.contacts_footer {
-    margin-top: 32px;
-}
-.send_message.margin {
-    margin-bottom: 32px;
-}
-.map.container {
-    width: 100vw;
-}
-}
-
-
-
-
-
-
-
-/* задание со звёздочкой 7 урока, вёрстка страницы Контакты по макету, не доделано */
-
-.main_content {
-    max-width: 940px;
-}
-
-.map>.container {
-    padding-left: 212px;
-}
-.map.container {
-    box-sizing: border-box;
-    width: 940px;
-}
-
-.contact_us {
-    background: linear-gradient(253.6deg, #98D0FC 2.46%, #3481D7 93.24%);
-    background-image: url(img/contacts-top.png);
-    background-repeat: no-repeat;
-    padding: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
+.card_box {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
-
-.contact_us .third {
-font-weight: 500;
-font-size: 44px;
-line-height: 74px;
-text-align: center;
-letter-spacing: 0.04em;
-color: #FFFFFF;
-padding-bottom: 16px;
-}
-.contact_us .first {
-    width: 780px;
-    font-size: 20px;
-line-height: 30px;
-text-align: center;
-letter-spacing: 0.04em;
-color: rgba(255, 255, 255, 0.6);
-}
-
-.send_message {
-    flex: 1;
-    background: #FFFFFF;
-box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
-border-radius: 10px;
-padding: 56px;
-margin-bottom: 96px;
-margin-left: 101px;
-display: flex;
-flex-direction: column;
-}
-.send_message .fifth {
-    font-weight: 500;
-font-size: 20px;
-line-height: 30px;
-letter-spacing: 0.04em;
-color: #1F3F68;
-text-transform: uppercase;
-padding-bottom: 48px;
-}
-.company_info {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    height: 800px;
-    padding-top: 56px;
-}
-.form {
-    height: 100%;
-}
-.company_info .fifth {
-    font-weight: 500;
-font-size: 20px;
-line-height: 30px;
-letter-spacing: 0.04em;
-color: #1F3F68;
-text-transform: uppercase;
-padding-bottom: 24px;
-padding-top: 40px;
-}
-.phone ul {
-    list-style-image: url(img/contacts-phone.svg);
-    list-style-position: inside;
-}
-.phone ul li a {
-    text-decoration: none;
-    font-weight: 300;
-font-size: 16px;
-line-height: 26px;
-letter-spacing: 0.04em;
-color: #1F3F68;
-padding-left: 19px;
-}
-.online_service ul li a {
-    text-decoration: none;
-    font-size: 16px;
-line-height: 26px;
-letter-spacing: 0.05em;
-color: #1F3F68;
-padding-left: 19px;
-}
-
-.online_service ul {
-    list-style-image: url(img/contacts-world.svg);
-    list-style-position: inside;
-}
-
-.online_service ul li:last-child {
-    list-style-image: url(img/contacts-mail.svg);
-    list-style-position: inside;
-}
-
-form {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.input_name {
-    font-size: 16px;
-line-height: 30px;
-letter-spacing: 0.04em;
-color: #1F3F68;
-opacity: 0.8;
-margin-bottom: 8px;
-}
-
-form input {
-    padding: 21px 36px;
-    opacity: 0.4;
-    border: 1px solid #356EAD;
-    box-sizing: border-box;
-    border-radius: 10px;
-    height: 72px;
+.card {
     margin-bottom: 32px;
 }
-form textarea {
-   padding: 21px 36px;
-    opacity: 0.4;
-    border: 1px solid #356EAD;
-    box-sizing: border-box;
-    border-radius: 10px;
-    height: 144px;
-    margin-bottom: 72px;
+.card_link {
+    padding-top: 26px;
 }
-.button {
-    padding: 23px 183px;
+.footer {
+    padding-top: 47px;
+}
+.footer_top {
+    padding-bottom: 64px;
+}
+.footer_text {
+    width: 65%;
+}
+.footer_button {
+    padding: 5px 35px;
+    white-space: nowrap;
+}
+.footer_container {
+    padding-left: 124px;
+    padding-right: 124px;
+}
+.footer_info {
+    flex-direction: column;
+}
+.footer_list {
+    margin-right: 0;
+}
+.footer_list:first-child::before {
+    margin-bottom: 25px;
+    margin-right: 35px;
+}
+.footer_list:nth-child(2)::before {
+    margin-bottom: 25px;
+    margin-right: 35px;
+}
+.footer_list:nth-child(3)::before {
+    margin-right: 35px;
+}
+
+/* адаптация страницы Контакты */
+
+.header {
+    padding-top: 16px;
+}
+.main {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 64px;
+}
+.main_container {
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+}
+.contacts_info {
+    margin-right: 0;
+    margin-bottom: 64px;
+    padding-top: 0;
+}
+.container_map {
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer {
+    margin-top: 64px;
+}
+}
+
+
+
+
+@media (max-width: 667px) {  /* 667px - iphone 6/7/8 гориз. */
+
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.top {
+    min-height: 376px;
+    padding-bottom: 41px;
+    box-sizing: border-box;
+}
+
+.header {
+    padding-top: 24px;
+}
+.top_info {
+    padding-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: none;
+}
+.top_heading {
+    width: 100%;
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.top_text {
+    width: 100%;
+    text-align: center;
+}
+.top_button {
+    font-size: 12px;
+    line-height: 26px;
+    padding: 0 8px;
+    margin-top: 32px;
+}
+.heading {
+    font-size: 24px;
+    line-height: 28px;
+}
+.what-we-do {
+    padding-top: 48px;
+}
+.card_box {
+    padding-top: 32px;
+}
+.card {
+    width: 100%;
+    padding: 30px 22px;
+}
+.card_link {
+    padding-top: 46px;
+}
+.text_project {
+    width: 100%;
+}
+.project_text {
+    font-size: 16px;
+    line-height: 19px;
+    top: 16px;
+    right: 16px;
+}
+.project_text_mini {
+    left: 16px;
+}
+.project_parent {
+    flex-direction: column;
+    margin-top: 16px;
+}
+.project_item_margin {
+    margin-right: 0;
+    margin-bottom: 16px;
+}
+
+.footer {
+    padding-top: 18px;
+    padding-bottom: 32px;
+    margin-top: 64px;
+}
+.footer_top {
+    padding-bottom: 40px;
+    flex-direction: column;
+}
+.footer_text {
+    padding-bottom: 40px;
+    width: 100%;
+}
+.footer_heading {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto 32px;
+}
+.text_footer {
+    text-align: center;
+    width: 100%;
+}
+.footer_button {
+    padding: 2px 15px;
+}
+.footer_info {
+    margin-top: 32px;
+}
+.footer_list:first-child {
+    margin-bottom: 17px;
+}
+.footer_list:first-child::before {
+    margin-right: 20px;
+}
+.footer_list:nth-child(2)::before {
+    margin-bottom: 17px;
+    margin-right: 20px;
+}
+.footer_list:nth-child(3)::before {
+    margin-right: 20px;
+}
+.footer_copy {
+    margin-top: 37px;
+    width: 100%;
+    text-align: center;
+}
+
+/* адаптация страницы Контакты */
+.contacts_header {
+    margin-top: 30px;
+}
+.top_box {
+    min-height: 0;
+}
+.contacts_heading {
+    font-size: 24px;
+    line-height: 28px;
+}
+.contacts_top_text {
+    width: 100%;
+    font-size: 16px;
+}
+.main {
+    margin-bottom: 32px;
+}
+.main_container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.contacts_info {
+    margin-bottom: 32px;
+    width: 90vw;
+    max-width: 300px;
+}
+.form {
+    padding: 35px;
+    width: 70vw;
+}
+.send_message {
+    font-size: 16px;
+    margin-bottom: 31px;
+}
+.input_text {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 13px 22px;
+    height: 46px;    /* ??? */
+}
+.input_heading {
+    font-size: 14px;
+}
+.input_text {
+    font-size: 14px;
+}
+.input_textarea {     /* ??? */
+    height: 92px;
+}
+.button_submit {
+    padding: 15px 0;
+    margin-top: 26px;
+}
+.container_map {
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer {
+    margin-top: 32px;
+}
 }

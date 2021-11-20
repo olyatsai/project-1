@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>Contacts</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,91 +13,96 @@
 
     <!-- header -->
 
-    <div class="top">
-        <div class="container top_box">
+    <div class="top_contacts">
 
+        <div class="container">
 
             <ul class="header">
                 <li><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
                 <li><a href="contacts.html"><img src="img/contacts.svg" alt="contacts"></a></li>
             </ul>
 
-
-            <div class="top_info">
-                <h1 class="top_heading">New Automation Tool for Your</h1>
-                <p class="text top_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique
-                    vulputate
-                    ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.</p>
-                <a href="#" class="top_button">See Our Project</a>
-            </div>
-
         </div>
+
+
+        <div class="contacts_header">
+            <div class="container contacts_top_flex">
+
+                <h2 class="h_2 contacts_heading">Contact us</h2>
+                <p class="text contacts_top_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+
+            </div>
+        </div>
+
     </div>
+
 
 
     <!-- main -->
 
-    <div class="what-we-do container">
+    <form action="#" class="container main main_container">
 
-        <h3 class="heading">What we do to help our client grow in digital era</h3>
+        <div class="contacts_info">
 
-        <div class="card_box">
+            <img class="form_img" src="img/contacts-main.png" alt="image">
 
-            <div class="card">
-                <img class="card_img" src="img/card-1.png" alt="card 1">
-                <h4 class="heading_mini">Make Your business To Be Better Famous In Internet</h4>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#" class="card_link">Learn more</a>
-            </div>
+            <h4 class="heading_mini heading_mini_form margin">Address</h4>
+            <p class="text text_form">Id convallis placerat sit sed duis id amet volutpat quam a, pharetra.</p>
 
-            <div class="card">
-                <img class="card_img" src="img/card-2.png" alt="card 2">
-                <h4 class="heading_mini">Bring Technology To Your Comfrotable Home</h4>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#" class="card_link">Learn more</a>
-            </div>
+            <h4 class="heading_mini heading_mini_form margin">Phone</h4>
+            <ul>
+                <li><a class="text text_form phone_numbers" href="tel:+781273134321">+7-812-7313-4321</a>
+                </li>
+                <li><a class="text text_form phone_numbers" href="tel:+781700001234">+7-817-0000-1234</a>
+                </li>
+            </ul>
 
-            <div class="card">
-                <img class="card_img" src="img/card-3.png" alt="card 3">
-                <h4 class="heading_mini">Build Your Digital Product That Suitable For Your Need</h4>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#" class="card_link">Learn more</a>
-            </div>
+            <h4 class="heading_mini heading_mini_form margin">Online service</h4>
+            <ul>
+                <li>
+                    <a class="text text_form website"
+                        href="https://vc.ru/life/147462-kak-trenirovat-pamyat-i-ne-nadeyatsya-na-google-kalendar-sovety-ot-koucha-nike-i-spacex"
+                        target="_blank">www.site.com</a>
+                </li>
+                <li>
+                    <a class="text text_form email" href="mailto:mail@gmail.com">hello.site@gmail.com</a>
+                </li>
+            </ul>
 
         </div>
+
+
+
+        <div class="form">
+
+            <h4 class="heading_mini heading_mini_form send_message">Send us message</h4>
+            <p class="input_heading">Full name</p>
+            <input class="input_text" type="text" placeholder="Имя">
+            <p class="input_heading">Email</p>
+            <input class="input_text" type="email" placeholder="E-mail">
+            <p class="input_heading">Message</p>
+            <textarea class="input_text input_textarea" cols="30" rows="5" placeholder="Сообщение"></textarea>
+            <button class="button_submit" type="submit">Submit</button>
+
+        </div>
+
+    </form>
+
+
+
+    <!-- Yandex Map -->
+    <div class="container main_container container_map">
+        <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac55726a8b7a77fe2a7e5d1b683e4c6c51deee161391d7983281f7add1474cb09&amp;width=100%&amp;height=458&amp;lang=ru_RU&amp;scroll=true"></script>
 
     </div>
 
-    <div class="project container">
 
-        <h3 class="heading">Our Finished Project</h3>
-        <p class="text text_project">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 
-        <div class="project_item">
-            <img class="project_img" src="img/project-1.png" alt="photo 1">
-            <p class="project_text">Smart Home Installation</p>
-        </div>
 
-        <div class="project_parent">
 
-            <div class="project_item project_item_margin">
-                <img class="project_img" src="img/project-2.png" alt="photo 2">
-                <p class="project_text project_text_mini">Sparklite App</p>
-            </div>
-
-            <div class="project_item">
-                <img class="project_img" src="img/project-3.png" alt="photo 3">
-                <p class="project_text project_text_mini">Car-Rapetition App</p>
-            </div>
-
-        </div>
-
-    </div>
 
     <!-- footer -->
 
